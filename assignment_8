@@ -1,0 +1,71 @@
+import numpy as np
+
+list1 = [[1, 2, 3], [4, 5, 6]]
+list2 = [[5, 6, 7], [10, 20, 30]]
+
+arr = np.array(list1)
+print(arr)
+#array dimensions
+print(arr.ndim)
+#data type:
+print(arr.dtype)
+#array size:
+print(len(arr))
+#array elements size:
+print(arr.size)
+#array sum:
+print(arr.sum())
+#arr max:
+print(arr.max())
+#arr min:
+print(arr.min())
+#square root:
+print(np.sqrt(arr))
+#standard deviation:
+print(np.std(arr))
+#sum of all columns:
+print(np.sum(arr, axis=0))
+#sum of all rows:
+print(np.sum(arr, axis=1))
+#Exchange the number of rows and columns
+print(np.transpose(arr))
+
+arr2 = np.array(list2)
+
+#add 2 arrays
+print(arr + arr2)
+#subtract 2 arrays:
+print(arr - arr2)
+#multiply 2 arrays:
+print(arr * arr2)
+#divide 2 arrays:
+print(arr / arr2)
+#print 10 values between 1 and 3 using linspace
+print(np.linspace(1.0, 3.0, num=10))
+
+
+print("*******\n*******\n*******")
+print("*******\n*******\n*******")
+#assignment 2:
+
+#using arange:
+print(np.arange(start=0, stop=20, step=2))
+#using arange:
+print(np.arange(start=0, stop=20, step=1))
+#using linspace:
+print(np.linspace(0.0, 20.0, num=10))
+#using logspace:
+print(np.logspace(2.0, 4.0, num=5))
+#using diag
+print(np.diag([1, 2, 3]))
+#using zeros
+print(np.zeros((5)))
+#using zeros
+print(np.zeros((2, 3)))
+#using zeros with dtype int:
+print(np.zeros((2,3),dtype=int))
+#using mgrid:
+y, x = np.mgrid[0:5, 0:5]
+
+print(y)
+print(x)
